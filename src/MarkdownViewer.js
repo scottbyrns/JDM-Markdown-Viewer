@@ -5,8 +5,7 @@ LiveWidgets.addWidget({
 	
 		handleMessage: function (message, channel, id) {
 			if (channel == "render-markdown") {
-				
-				this.element.innerHTML = markdown.toHTML(message);
+				this.element.innerHTML = Markdown.toHTML(message);
 				
 			}
 		}
